@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ddR-xo-SXt">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="shopify2020CodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kM2-UR-fa5">
+                                <rect key="frame" x="10" y="124" width="355" height="574"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5jF-W4-GtU">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="106.66666666666667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-Kh-4Aw" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wt4-3C-p8I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-29-kbS" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rex-T2-H8K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Iq-Uf-mJw" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yhm-Ow-AF7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N69-de-cH4" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOA-9Z-GLm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jCB-oj-yVd">
+                                        <rect key="frame" x="0.0" y="116.66666666666666" width="355" height="107"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsJ-Fs-I8X" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="551-nZ-auE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhe-AV-RQX" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yG1-X2-r6P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3b-1K-PT3" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ih-k5-1Mh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0T-fH-Bry" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jG3-5m-aIA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Brl-h6-wWM">
+                                        <rect key="frame" x="0.0" y="233.66666666666666" width="355" height="106.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96X-Z0-1Uo" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyz-Pd-Pim"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qje-kl-l5T" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goS-Qw-Plf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3j-Gw-091" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cH-jw-UZD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-qy-ckk" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGy-or-kbJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HkO-F9-Z11">
+                                        <rect key="frame" x="0.0" y="350.33333333333331" width="355" height="107"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deW-gn-Jvb" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crs-yx-fob"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50h-cW-riw" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdT-qH-EHJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ini-nZ-sdm" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7J-85-SbZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWO-ij-1z4" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="107"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wyv-KN-vEL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cTJ-xr-mfX">
+                                        <rect key="frame" x="0.0" y="467.33333333333343" width="355" height="106.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrv-xu-k2L" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Zq-50-Jrk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwh-PV-ut9" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5y-aG-3Go"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndx-k1-Wcc" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxe-Ea-4MW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGr-Fd-r79" customClass="Card" customModule="shopify2020CodingChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="106.66666666666667"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cardPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fH-XH-5B4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-nR-us5">
+                                <rect key="frame" x="135.66666666666666" y="713" width="104" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNV-hm-iay"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSX-xK-Vg4">
+                                <rect key="frame" x="120.00000000000001" y="54" width="135.33333333333337" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-qf-oH4">
+                                <rect key="frame" x="10" y="44" width="32" height="32"/>
+                                <state key="normal" backgroundImage="settingIcon"/>
+                                <connections>
+                                    <action selector="settingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oyt-aK-8Da"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kM2-UR-fa5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5dm-7Q-XUb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kM2-UR-fa5" secondAttribute="trailing" constant="10" id="7YU-kH-21w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kM2-UR-fa5" secondAttribute="bottom" constant="80" id="Fps-ab-RpN"/>
+                            <constraint firstItem="kM2-UR-fa5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Ust-D9-JvO"/>
+                            <constraint firstItem="xaf-qf-oH4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="W3j-cM-cme"/>
+                            <constraint firstItem="kM2-UR-fa5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="W8t-xe-j7C"/>
+                            <constraint firstItem="vQ8-nR-us5" firstAttribute="top" secondItem="kM2-UR-fa5" secondAttribute="bottom" constant="15" id="akU-5B-QEy"/>
+                            <constraint firstItem="xaf-qf-oH4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fPf-iy-aMt"/>
+                            <constraint firstItem="pSX-xK-Vg4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYP-vs-J1Z"/>
+                            <constraint firstItem="pSX-xK-Vg4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="py6-mB-Lbg"/>
+                            <constraint firstItem="vQ8-nR-us5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qYN-Aj-eKl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vQ8-nR-us5" secondAttribute="bottom" constant="5" id="r26-gD-RaW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="pSX-xK-Vg4" id="3co-cC-NfW"/>
+                        <outlet property="settingButton" destination="xaf-qf-oH4" id="06c-Nz-GvN"/>
+                        <outlet property="startButton" destination="vQ8-nR-us5" id="c4y-Vi-UVf"/>
+                        <outletCollection property="cardList" destination="pRE-Kh-4Aw" collectionClass="NSMutableArray" id="awo-9b-RXj"/>
+                        <outletCollection property="cardList" destination="Ydb-29-kbS" collectionClass="NSMutableArray" id="Sj2-hY-cTf"/>
+                        <outletCollection property="cardList" destination="8Iq-Uf-mJw" collectionClass="NSMutableArray" id="umC-Jz-xbc"/>
+                        <outletCollection property="cardList" destination="N69-de-cH4" collectionClass="NSMutableArray" id="qLd-8H-dsL"/>
+                        <outletCollection property="cardList" destination="wsJ-Fs-I8X" collectionClass="NSMutableArray" id="E2I-r4-Ty6"/>
+                        <outletCollection property="cardList" destination="qhe-AV-RQX" collectionClass="NSMutableArray" id="NB3-SZ-Lgk"/>
+                        <outletCollection property="cardList" destination="u3b-1K-PT3" collectionClass="NSMutableArray" id="dt3-7y-VdK"/>
+                        <outletCollection property="cardList" destination="y0T-fH-Bry" collectionClass="NSMutableArray" id="Nfo-Ao-Oqe"/>
+                        <outletCollection property="cardList" destination="96X-Z0-1Uo" collectionClass="NSMutableArray" id="Pv7-j9-hRR"/>
+                        <outletCollection property="cardList" destination="Qje-kl-l5T" collectionClass="NSMutableArray" id="H82-k6-mvw"/>
+                        <outletCollection property="cardList" destination="Z3j-Gw-091" collectionClass="NSMutableArray" id="XDl-Sd-HGK"/>
+                        <outletCollection property="cardList" destination="ggE-qy-ckk" collectionClass="NSMutableArray" id="hgo-oX-ekK"/>
+                        <outletCollection property="cardList" destination="deW-gn-Jvb" collectionClass="NSMutableArray" id="FWN-sm-Guf"/>
+                        <outletCollection property="cardList" destination="50h-cW-riw" collectionClass="NSMutableArray" id="FQy-cA-CZm"/>
+                        <outletCollection property="cardList" destination="ini-nZ-sdm" collectionClass="NSMutableArray" id="8bZ-yP-jdj"/>
+                        <outletCollection property="cardList" destination="eWO-ij-1z4" collectionClass="NSMutableArray" id="4kP-RH-TnW"/>
+                        <outletCollection property="cardList" destination="Nrv-xu-k2L" collectionClass="NSMutableArray" id="vuc-Ev-45E"/>
+                        <outletCollection property="cardList" destination="iwh-PV-ut9" collectionClass="NSMutableArray" id="Kne-zA-Jwx"/>
+                        <outletCollection property="cardList" destination="ndx-k1-Wcc" collectionClass="NSMutableArray" id="lHj-e1-6g6"/>
+                        <outletCollection property="cardList" destination="gGr-Fd-r79" collectionClass="NSMutableArray" id="xph-eM-0aQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421.5999999999999" y="65.763546798029566"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="ptL-Hj-mYh">
+            <objects>
+                <viewController id="ddR-xo-SXt" customClass="LoadingViewController" customModule="shopify2020CodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3a-2u-zZN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="327" translatesAutoresizingMaskIntoConstraints="NO" id="McW-DG-iN0">
+                                <rect key="frame" x="23.333333333333343" y="203" width="328.66666666666663" height="575.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="psk-gy-4w8">
+                                        <rect key="frame" x="0.0" y="0.0" width="328.66666666666669" height="231.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopifyIcon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nsx-BM-M6q">
+                                                <rect key="frame" x="114.33333333333331" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="T9Z-e8-wMm"/>
+                                                    <constraint firstAttribute="width" constant="100" id="rG5-Cr-H7n"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopify 2020 IOS Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzx-75-HhP">
+                                                <rect key="frame" x="0.0" y="200" width="328.66666666666669" height="31.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                                <color key="textColor" red="0.40734022855758667" green="0.54925352334976196" blue="0.2783806324005127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q4B-BU-S5P">
+                                        <rect key="frame" x="32" y="558.33333333333337" width="264.33333333333331" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019 © Tracy Meng | All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-f6-YsC">
+                                                <rect key="frame" x="0.0" y="0.0" width="264.33333333333331" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.48127708340000003" green="0.612502031" blue="0.79465418779999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="McW-DG-iN0" firstAttribute="centerX" secondItem="K3a-2u-zZN" secondAttribute="centerX" id="DW0-GD-drI"/>
+                            <constraint firstAttribute="bottom" secondItem="McW-DG-iN0" secondAttribute="bottom" constant="33.670000000000002" id="wmQ-5G-ODZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wzg-4q-LVb"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToGame" id="zbr-3K-jr5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baC-M7-cKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.60000000000002" y="64.285714285714292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settingIcon" width="32" height="32"/>
+        <image name="shopifyIcon" width="600" height="683"/>
+    </resources>
+</document>
